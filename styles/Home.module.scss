@@ -1,0 +1,480 @@
+// Color Variables
+$primary: #1f2041;
+$secondary: #2c5ff6;
+$bg: #ffffff;
+
+// Import font from assets folder
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis.medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis.semi-bold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/metropolis.bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// All CSS
+.wrapper {
+  font-family: "Metropolis", sans-serif;
+  color: $primary;
+  width: 100%;
+  padding: 3rem 4rem;
+  overflow: hidden;
+  background-image: url("/images/hero-adjustments.svg");
+
+  * {
+    box-sizing: border-box;
+  }
+
+  // Header
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url("/images/header-accents.svg");
+      position: absolute;
+      right: -300px;
+      z-index: -1;
+      top: -36px;
+      width: 870px;
+      height: 625px;
+    }
+
+    // Left
+    // Logo
+    .logo {
+      font-weight: 700;
+      font-size: 2.5em;
+      line-height: 40px;
+      letter-spacing: -0.025em;
+      color: $secondary;
+    }
+
+    // Right
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 55px;
+
+      .cta {
+        background: $secondary;
+        box-shadow: 0px 13.434px 39.1824px rgba(21, 76, 238, 0.21);
+        border-radius: 12px;
+        padding: 15px 26px;
+        color: $bg;
+        font-family: "Metropolis";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+    @media (max-width: 600px) {
+      justify-content: center;
+      background: white;
+      border-radius: 50px;
+      padding: 10px 5px;
+      box-shadow: 0px 13.434px 39.1824px rgb(21 76 238 / 21%);
+      .logo {
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 40px;
+        letter-spacing: -0.025em;
+        color: $secondary;
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+
+  // Main
+  // Hero Section
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 42px;
+
+    .left {
+      width: 50%;
+      // flex-shrink: 0;
+      position: relative;
+      z-index: 0;
+
+      .heading {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 111.5%;
+        color: $primary;
+        margin: 0;
+        margin-bottom: 43px;
+        position: relative;
+
+        &::after {
+          content: "";
+          background-image: url("/icons/heading-stroke.svg");
+          width: 207px;
+          height: 17.5px;
+          position: absolute;
+          right: 150px;
+          bottom: -10px;
+        }
+      }
+
+      .subheading {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 170%;
+        margin: 0;
+        margin-bottom: 38px;
+      }
+
+      .CTAs {
+        margin: 0;
+        margin-bottom: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 25px;
+      }
+
+      &::before {
+        content: "";
+        background: #dff0fd;
+        opacity: 0.8;
+        filter: blur(144.293px);
+        position: absolute;
+        left: -316px;
+        width: 406px;
+        height: 441.37px;
+        z-index: -1;
+        top: 140px;
+      }
+    }
+
+    .right {
+      flex-shrink: 0;
+      width: 50%;
+      .image {
+        position: relative;
+        overflow: visible;
+        margin-right: -150px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: -48px;
+          top: -60px;
+          height: 517px;
+          width: 813px;
+          overflow: visible;
+          z-index: -1;
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: row-reverse;
+    }
+    @media (max-width: 1024px) {
+      .left,
+      .right {
+        text-align: center;
+        width: 100%;
+      }
+
+      .CTAs {
+        justify-content: center !important;
+      }
+    }
+    @media (max-width: 650px) {
+      .heading {
+        font-size: 2.5rem !important;
+      }
+      .CTAs {
+        button {
+          text-align: start !important;
+        }
+      }
+    }
+  }
+
+  // Top Workout Section
+  .topWorkout {
+    // Heading
+    .heading {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -0.025em;
+      position: relative;
+      width: max-content;
+      margin: auto;
+
+      &::after {
+        content: "";
+        background-image: url("/icons/section-stroke.svg");
+        width: 100px;
+        height: 14.5px;
+        position: absolute;
+        right: 7px;
+        bottom: -17px;
+      }
+    }
+
+    .workoutList {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0;
+      margin-top: 35px;
+
+      .item {
+        position: relative;
+        padding: 33px 120px 33px 40px;
+        border-radius: 32px;
+        z-index: 0;
+        overflow: hidden;
+        min-width: 300px;
+        width: 33%;
+
+        .title {
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 32px;
+          max-width: 110px;
+
+          margin: 0;
+          margin-bottom: 15px;
+        }
+        .subheading {
+          font-weight: 600;
+          font-size: 15.4295px;
+          line-height: 127.5%;
+
+          color: #707070;
+          margin: 0;
+          margin-bottom: 24px;
+        }
+        .image {
+          position: absolute;
+          // left: 21px;
+          top: 21px;
+          right: 10px;
+          z-index: -1;
+        }
+
+        .stats {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 12px;
+          margin: 0;
+          padding: 0;
+
+          .stat {
+            border-radius: 40px;
+            padding: 8px 10px;
+            background-color: $bg;
+            margin: 0;
+            font-weight: 600;
+            font-size: 17.2026px;
+            line-height: 127.5%;
+            letter-spacing: -0.01em;
+            color: #000000;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: -60px;
+          top: -42px;
+          width: 439px;
+          height: 305px;
+          z-index: -2;
+          background-repeat: no-repeat;
+          background-position: top;
+        }
+
+        &:nth-of-type(1) {
+          background-color: #dff0fd;
+          &::after {
+            background-image: url("/images/workout-items/first-stroke.svg");
+          }
+        }
+        &:nth-of-type(2) {
+          background-color: #fadffc;
+
+          &::after {
+            background-image: url("/images/workout-items/second-stroke.svg");
+          }
+        }
+        &:nth-of-type(3) {
+          background-color: #d9fcf5;
+
+          &::after {
+            background-image: url("/images/workout-items/third-stroke.svg");
+          }
+        }
+      }
+
+      @media (max-width: 1200px) {
+        justify-content: center;
+        .item {
+          width: 60%;
+          margin-bottom: 10px;
+        }
+      }
+      @media (max-width: 800px) {
+        .item {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  // Utilities
+  .CTA {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15.673px 26.8679px;
+    gap: 12.69px;
+    border: none;
+
+    font: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+
+    &.fill {
+      background: $secondary;
+      color: $bg;
+      box-shadow: 0px 13.434px 39.1824px rgba(21, 76, 238, 0.21);
+    }
+
+    &.outline {
+      border: 2.5px solid $secondary;
+      filter: drop-shadow(0px 13.434px 39.1824px rgba(21, 76, 238, 0.21));
+      border-radius: 12px;
+      color: $secondary;
+    }
+  }
+}
+
+// About
+
+.about {
+  display: flex;
+  padding: 100px 0;
+  margin: 40px 0;
+
+  .image {
+    min-width: 40%;
+    margin-top: 5%;
+  }
+  .about_info {
+    padding: 0 60px;
+    margin-top: 5%;
+
+    .sub_title {
+      font-size: 20px;
+      line-height: 29px;
+      color: $secondary;
+      font-weight: bold;
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 3px;
+    }
+    h2 {
+      font-size: 45px;
+      line-height: 120%;
+      font-weight: bold;
+      color: $primary;
+      text-transform: capitalize;
+      margin-bottom: 19px;
+      position: relative;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 170%;
+      margin: 0;
+      margin-bottom: 38px;
+    }
+    .button {
+      background: #2c5ff6;
+      box-shadow: 0px 13.434px 39.1824px rgb(21 76 238 / 21%);
+      border-radius: 12px;
+      padding: 15px 26px;
+      color: #ffffff;
+      font-family: "Metropolis";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    .image {
+      text-align: center;
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .about_info {
+      padding: 0;
+
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.services {
+  text-align: center;
+  margin: 100px 40px;
+  padding: 20px 40px;
+
+  h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    color: $primary;
+    text-transform: capitalize;
+    margin-bottom: 19px;
+    position: relative;
+  }
+}
