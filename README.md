@@ -6,7 +6,7 @@ This is a landing page design for MarkitUp, converted to code from [this figma t
 
 This is an still-screenshot of the page. However, you will need to visit the site to experience the animations.
 
-![Landing Page Design](https://user-images.githubusercontent.com/48997634/171572481-0d5c651c-96e5-4808-829f-9282861c10c4.png)
+![Landing Page Design](../Fitness/components/assets/images/LandingPage.png)
 
 ## 🏃‍♂️ Run Locally
 
