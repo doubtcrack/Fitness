@@ -8,15 +8,19 @@ import Services from "../components/services/services";
 
 export default function App() {
   return (
-    <div className={styles.wrapper}>
-      <Navbar />
-      <Main />
-      <Heading name={"Top Workouts"} />
-      <Workouts />
-      <About />
-      <Heading name={"Top Services"} />
-      <Services />
-    </div>
+    <>
+      <div className={styles.wrapper}>
+        <div className={styles.wrapper_padding}>
+          <Navbar />
+          <Main />
+          <Heading name={"Top Workouts"} />
+          <Workouts />
+          <About />
+          <Heading name={"Top Services"} />
+        </div>
+        <Services />
+      </div>
+    </>
   );
 }
 

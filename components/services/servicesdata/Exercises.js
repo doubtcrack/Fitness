@@ -72,12 +72,14 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">
         {exercises.length > 9 && (
           <Pagination
+            className="pagination"
             color="standard"
-            shape="rounded"
+            shape="circle"
             defaultPage={1}
             count={Math.ceil(exercises.length / exercisesPerPage)}
             page={currentPage}
             onChange={paginate}
+            siblingCount={0}
             sx={{ size: { lg: "large", xs: "small" } }}
             size="large"
           />

@@ -88,6 +88,9 @@
   text-decoration: none;
 }
 
+.react-horizontal-scrolling-menu--scroll-container {
+  overflow-x: hidden;
+}
 @media (max-width: 1200px) {
   .search-exercise {
     width: 80vw;
@@ -108,8 +111,25 @@
   }
 }
 
+.pagination {
+  ul {
+    flex-wrap: nowrap;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .exercise-card {
     width: 280px;
+  }
+  .bodyPart-card {
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    margin: 0;
+
+    span {
+      max-width: 20% !important;
+      height: 20% !important;
+    }
   }
 }

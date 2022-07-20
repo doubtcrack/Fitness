@@ -29,12 +29,14 @@ $bg: #ffffff;
   font-style: normal;
 }
 
+.wrapper_padding {
+  padding: 3rem 4rem;
+}
 // All CSS
 .wrapper {
   font-family: "Metropolis", sans-serif;
   color: $primary;
   width: 100%;
-  padding: 3rem 4rem;
   overflow: hidden;
   background-image: url("/images/hero-adjustments.svg");
 
@@ -487,5 +489,12 @@ $bg: #ffffff;
     h2 {
       font-size: 1.2rem;
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
