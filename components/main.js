@@ -6,7 +6,7 @@ const Main = () => {
       <section className={styles.left}>
         <h1 className={styles.heading}>One step towards a healthy lifestyle</h1>
         <p className={styles.subheading}>
-          Healthy body is the secret of healthy lifestyle. Start your day with
+          Healthy body is the secret of healthy lifestyle. Start your day with{" "}
           <b>Fitness</b>.
         </p>
 
