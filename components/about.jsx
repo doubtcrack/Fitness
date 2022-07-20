@@ -17,13 +17,13 @@ const About = () => {
         <h2>We Are Ready To Making You In A Shape</h2>
         <div>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            architecto beatae vitae dicta sunt explicabo.
+            Finding motivation to work out can be challenging. There are so many
+            distractions and less physically demanding alternatives to spending
+            an hour at the gym or working out at home.
           </p>
           <p>
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-            fugit, sed quia consequuntur magni dolores eos qui.
+            You need to understand that Strength does not come from physical
+            capacity. It comes from an indomitable will.
           </p>
         </div>
         <span className={styles.button}>Learn More</span>

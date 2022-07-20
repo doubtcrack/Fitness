@@ -7,7 +7,7 @@ const Main = () => {
         <h1 className={styles.heading}>One step towards a healthy lifestyle</h1>
         <p className={styles.subheading}>
           Healthy body is the secret of healthy lifestyle. Start your day with
-          BitClass. Book a free trial.
+          <b>Fitness</b>.
         </p>
 
         {/* CTAs */}
