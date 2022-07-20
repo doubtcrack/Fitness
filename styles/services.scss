@@ -1,0 +1,115 @@
+.search-exercises {
+  justify-content: center;
+  padding-left: 15px;
+  .Home_wrapper__XaPDZ * {
+    border: none;
+  }
+  fieldset {
+    border: none;
+  }
+}
+.right-arrow,
+.left-arrow {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff2625;
+  font-size: 25px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -20px;
+  right: 80px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    transform: scale(1.3, 1.3);
+  }
+}
+
+.right-arrow {
+  right: 140px;
+}
+
+// .react-horizontal-scrolling-menu--wrapper {
+//   width: 100%;
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .detail-image {
+//   width: 729px;
+//   height: 742px;
+// }
+
+.exercise-card {
+  // width: 400px;
+  // height: 445px;
+  padding: 10px;
+  background: white;
+  border-top: 4px solid #2c5ff6;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+  height: 250px;
+  width: 250px;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.search-btn:hover {
+  color: #ff2625 !important;
+  border: 1px solid #ff2625 !important;
+}
+
+.exercise-video {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 387px;
+  height: 381px;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .search-exercise {
+    width: 80vw;
+    padding-left: 15px;
+  }
+  // .left-arrow,
+  // .right-arrow {
+  //   position: static !important;
+  // }
+
+  .exercise-card {
+    width: 320px;
+  }
+
+  .exercise-video {
+    width: 320px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .exercise-card {
+    width: 280px;
+  }
+}

@@ -478,3 +478,14 @@ $bg: #ffffff;
     position: relative;
   }
 }
+
+@media (max-width: 800px) {
+  .services {
+    margin: 0;
+    padding: 30px 0 0 0;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
