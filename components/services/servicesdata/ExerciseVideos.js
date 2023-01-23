@@ -38,6 +38,8 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
               style={{ borderTopLeftRadius: "20px" }}
               src={item.video.thumbnails[0].url}
               alt={item.video.title}
+              width={300}
+              height={300}
             />
             <Box>
               <Typography
