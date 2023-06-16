@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["d205bpvrqc9yn1.cloudfront.net"],
+    domains: ["edbv2-ff7foj6vca-uc.a.run.app"],
   },
 };
 
