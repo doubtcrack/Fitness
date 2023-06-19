@@ -69,7 +69,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             height: "56px",
             position: "absolute",
             right: "0px",
-            fontSize: { lg: "20px", xs: "14px" },
+            fontSize: { lg: "20px!important", xs: "14px!important" },
           }}
           onClick={handleSearch}
         >

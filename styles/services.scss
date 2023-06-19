@@ -1,6 +1,8 @@
 .search-exercises {
   justify-content: center;
   padding-left: 15px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
   .Home_wrapper__XaPDZ * {
     border: none;
   }
@@ -49,16 +51,19 @@
 .exercise-card {
   // width: 400px;
   // height: 445px;
+  box-shadow: 0 10px 15px -2px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
   padding: 10px;
   background: white;
   border-top: 4px solid #2c5ff6;
   border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding-bottom: 10px;
   transform: scale(1, 1);
+  min-width: 35vw;
   transition: 0.3s all ease-in-out;
 }
 
@@ -67,6 +72,8 @@
   transition: 0.3s all ease-in-out;
   height: 250px;
   width: 250px;
+  box-shadow: 0 10px 15px 1px rgb(0 0 0 / 0.1), 0 4px 5px -6px rgb(0 0 0 / 0.1);
+  border-radius: 10px;
 }
 
 .exercise-card:hover,
@@ -122,8 +129,8 @@
     width: 280px;
   }
   .bodyPart-card {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 150px;
     padding: 0;
     margin: 0;
 
